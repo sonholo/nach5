@@ -1,0 +1,12 @@
+<html>
+<head>
+	<title>nach5</title>
+</head>
+<body>
+	<form action="/form" method="post">
+		<input type="text" name="message">
+		<input type="submit">
+	</form>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf8">
+	<title><%= @title + ' | natch5' %></title>
+	<link href="/reset.css" rel="stylesheet">
+	<link href="/style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<hgroup>
+			<h1><a href="/">natch5</a></h1>
+			<h2>a really crappy imageboard</h2>
+		</hgroup>
+	</header>
+
+	<div id="main">
+		<%= yield %>
+	</div>
+
+	<footer>
+		<p><small>&lt;3 holo</small></p>
+	</footer>
+</body>
+</html>

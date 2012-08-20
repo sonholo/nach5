@@ -1,0 +1,21 @@
+<section id="add">
+	<form action="/" method="post">
+		<p><input type="textbox" name="imgurl" placeholder="insert image url here"/></p>
+		<p><textarea name="content" placeholder="insert post message here"></textarea></p>
+		<p><input type="submit" value="submit post"></p>
+	</form>
+</section>
+
+<hr />
+
+<% @posts.each do |post| %>
+	<article>
+		<p class="meta"><%= post.created_at %></p>
+		<p>
+			<%= escape_html post.content %>
+		</p>
+		<p class="links">
+			<a href="/post/<%= post.id %>">view comments</a>
+		</p>
+	</article>
+<% end %>

@@ -1,0 +1,4 @@
+<h2>reply to <%= @post.id %></h1>
+<form action="/post/<% @post.id %>" method="post">
+
+</form>

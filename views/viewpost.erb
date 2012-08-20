@@ -1,0 +1,13 @@
+<% if @post %>
+  <article>
+		<p class="meta"><%= @post.created_at %></p>
+		<p>
+			<%= escape_html @post.content %>
+		</p>
+		<p class="links">
+			<a href="/post/<%= @post.id %>/reply">reply to this post</a>
+		</p>
+	</article>
+<% else %>
+  <p>that post doesn't exist, nigger</p>
+<% end %>
